@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #19647E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.esquerda-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda-login > h1 {
+    font-size: 3vw;
+    color: #F2E86D;
+}
+
+.esquerda-login-imagem {
+    width: 30vw;
+}
+
+.direita-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #A38560;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #1F271B;
+}
+
+.card-login > h1 {
+    color: #F2E86D;
+    font-weight: 900;
+}
+
+.campodetexto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+    width: 70%;
+}
+
+.campodetexto > input {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    background: #C6A15B;
+    color: #F2E86D;
+    font-size: 13px;
+    box-shadow: 0 10px 40px #1F271B;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.campodetexto > label {
+    color: #D3DFB8;
+}
+
+.campodetexto > input::placeholder {
+    color: #D3DFB8;
+}
+
+.botao-login {
+    width: 70%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #A38560;
+    background-color: #D3DFB8;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #A38560;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .esquerda-login > h1 {
+        display: none;
+    }
+    .esquerda-login {
+        height: auto;
+        width: 100%;
+    }
+
+    .direita-login {
+        height: auto;
+        width: 100%;
+    }
+    
+    .esquerda-login-imagem {
+        width: 60vw;
+    }
+
+    .card-login {
+        width: 80%;
+    }
+}
