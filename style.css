@@ -9,6 +9,23 @@ body * {
     box-sizing: border-box;
 }
 
+.cabecalho {
+    background: #19647E;
+}
+
+.cabecalho__menu {
+    text-align: center;
+}
+
+.cabecalho__menu__link {
+    background: #A38560;
+    text-decoration: none;
+    font-size: 18px;
+    color: #F2E86D;
+    border-radius: 20px;
+    padding: 20px;
+}
+
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -108,13 +125,23 @@ body * {
     box-shadow: 0px 10px 40px -12px #A38560;
 }
 
+.login-esquecido {
+    color: #F2E86D;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 950px) {
     .card-login {
         width: 85%;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
     .main-login {
         flex-direction: column;
     }
